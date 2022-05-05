@@ -16,7 +16,7 @@ def create_html(cur):
     text += '<table border="1">'
     for cur_i in cur:
         text += '<tr>'
-        text += '<td>' + cur_i['Name'] + '(*' + cur_i['CharCode'] + '):</td><td>' + str(cur_i['Value']) + \
+        text += '<td>' + cur_i['Name'] + '(*' + cur_i['CharCode'] + '*):</td><td>' + str(cur_i['Value']) + \
                 ' руб </td><td>(' + str(round(cur_i['Previous'] - cur_i['Value'], 2)) + ')</td>'
         # text = text + curr['ID']
         text += '</tr>'
